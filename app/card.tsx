@@ -25,7 +25,7 @@ export function Card(props: CardProps) {
       className="card"
       style={{ opacity: isDragging ? 0.5 : 1 }}
       draggable
-      onDragStart={(e) => setIsDragging(true)}
+      onDragStart={() => setIsDragging(true)}
       onDragEnd={() => {
         props.dragEnd();
         setIsDragging(false);
